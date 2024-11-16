@@ -1,0 +1,18 @@
+Wine[0] = Wine(name=Standard Wine, price=17, expiresInYears=7)
+
+Wine[1] = Wine(name=Bourdeaux Conservato, price=4, expiresInYears=-1)
+
+Wine[2] = Wine(name=Another Standard Wine, price=4, expiresInYears=2)
+
+Wine[3] = Wine(name=Wine brewed by Alexander the Great, price=150, expiresInYears=0)
+
+Wine[4] = Wine(name=Wine brewed by Alexander the Great, price=80, expiresInYears=10)
+
+Wine[5] = Wine(name=Event Wine, price=23, expiresInYears=12)
+
+Wine[6] = Wine(name=Event Wine, price=52, expiresInYears=7)
+
+Wine[7] = Wine(name=Event Wine, price=55, expiresInYears=2)
+
+Wine[8] = Wine(name=Eco Brilliant Wine, price=3, expiresInYears=0)
+

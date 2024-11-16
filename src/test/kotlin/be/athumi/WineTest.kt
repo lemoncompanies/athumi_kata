@@ -1,6 +1,7 @@
 package be.athumi
 
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class WineTest {
@@ -10,13 +11,11 @@ class WineTest {
     }
 
     @Test
-    fun `a shop without wine is no shop, is it`() {
-        val shop = WineShop(listOf(Wine("name", 0, 0)))
+    fun `Wine initialisation test`() {
+        val wine = Wine(name = "Standard Wine", price = 10, expiresInYears = 5)
 
-        assertThat(shop).isNotNull
-
-        shop.next()
-
-        assertThat(shop).isNotNull
+        assertEquals(wine.name, "Standard Wine")
+        assertEquals(wine.price, 10)
+        assertEquals(wine.expiresInYears, 5)
     }
 }

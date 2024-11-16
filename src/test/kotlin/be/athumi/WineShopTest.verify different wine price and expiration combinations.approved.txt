@@ -1,0 +1,300 @@
+Wine[0] = Wine(name=Standard Wine, price=0, expiresInYears=-1)
+
+Wine[1] = Wine(name=Standard Wine, price=0, expiresInYears=0)
+
+Wine[2] = Wine(name=Standard Wine, price=0, expiresInYears=4)
+
+Wine[3] = Wine(name=Standard Wine, price=0, expiresInYears=7)
+
+Wine[4] = Wine(name=Standard Wine, price=0, expiresInYears=9)
+
+Wine[5] = Wine(name=Standard Wine, price=18, expiresInYears=-1)
+
+Wine[6] = Wine(name=Standard Wine, price=19, expiresInYears=0)
+
+Wine[7] = Wine(name=Standard Wine, price=19, expiresInYears=4)
+
+Wine[8] = Wine(name=Standard Wine, price=19, expiresInYears=7)
+
+Wine[9] = Wine(name=Standard Wine, price=19, expiresInYears=9)
+
+Wine[10] = Wine(name=Standard Wine, price=97, expiresInYears=-1)
+
+Wine[11] = Wine(name=Standard Wine, price=98, expiresInYears=0)
+
+Wine[12] = Wine(name=Standard Wine, price=98, expiresInYears=4)
+
+Wine[13] = Wine(name=Standard Wine, price=98, expiresInYears=7)
+
+Wine[14] = Wine(name=Standard Wine, price=98, expiresInYears=9)
+
+Wine[15] = Wine(name=Standard Wine, price=148, expiresInYears=-1)
+
+Wine[16] = Wine(name=Standard Wine, price=149, expiresInYears=0)
+
+Wine[17] = Wine(name=Standard Wine, price=149, expiresInYears=4)
+
+Wine[18] = Wine(name=Standard Wine, price=149, expiresInYears=7)
+
+Wine[19] = Wine(name=Standard Wine, price=149, expiresInYears=9)
+
+Wine[20] = Wine(name=Standard Wine, price=0, expiresInYears=-1)
+
+Wine[21] = Wine(name=Standard Wine, price=0, expiresInYears=0)
+
+Wine[22] = Wine(name=Standard Wine, price=0, expiresInYears=4)
+
+Wine[23] = Wine(name=Standard Wine, price=0, expiresInYears=7)
+
+Wine[24] = Wine(name=Standard Wine, price=0, expiresInYears=9)
+
+Wine[25] = Wine(name=Another Standard Wine, price=0, expiresInYears=-1)
+
+Wine[26] = Wine(name=Another Standard Wine, price=0, expiresInYears=0)
+
+Wine[27] = Wine(name=Another Standard Wine, price=0, expiresInYears=4)
+
+Wine[28] = Wine(name=Another Standard Wine, price=0, expiresInYears=7)
+
+Wine[29] = Wine(name=Another Standard Wine, price=0, expiresInYears=9)
+
+Wine[30] = Wine(name=Another Standard Wine, price=18, expiresInYears=-1)
+
+Wine[31] = Wine(name=Another Standard Wine, price=19, expiresInYears=0)
+
+Wine[32] = Wine(name=Another Standard Wine, price=19, expiresInYears=4)
+
+Wine[33] = Wine(name=Another Standard Wine, price=19, expiresInYears=7)
+
+Wine[34] = Wine(name=Another Standard Wine, price=19, expiresInYears=9)
+
+Wine[35] = Wine(name=Another Standard Wine, price=97, expiresInYears=-1)
+
+Wine[36] = Wine(name=Another Standard Wine, price=98, expiresInYears=0)
+
+Wine[37] = Wine(name=Another Standard Wine, price=98, expiresInYears=4)
+
+Wine[38] = Wine(name=Another Standard Wine, price=98, expiresInYears=7)
+
+Wine[39] = Wine(name=Another Standard Wine, price=98, expiresInYears=9)
+
+Wine[40] = Wine(name=Another Standard Wine, price=148, expiresInYears=-1)
+
+Wine[41] = Wine(name=Another Standard Wine, price=149, expiresInYears=0)
+
+Wine[42] = Wine(name=Another Standard Wine, price=149, expiresInYears=4)
+
+Wine[43] = Wine(name=Another Standard Wine, price=149, expiresInYears=7)
+
+Wine[44] = Wine(name=Another Standard Wine, price=149, expiresInYears=9)
+
+Wine[45] = Wine(name=Another Standard Wine, price=0, expiresInYears=-1)
+
+Wine[46] = Wine(name=Another Standard Wine, price=0, expiresInYears=0)
+
+Wine[47] = Wine(name=Another Standard Wine, price=0, expiresInYears=4)
+
+Wine[48] = Wine(name=Another Standard Wine, price=0, expiresInYears=7)
+
+Wine[49] = Wine(name=Another Standard Wine, price=0, expiresInYears=9)
+
+Wine[50] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=-1)
+
+Wine[51] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=0)
+
+Wine[52] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=4)
+
+Wine[53] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=7)
+
+Wine[54] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=9)
+
+Wine[55] = Wine(name=Eco Brilliant Wine, price=18, expiresInYears=-1)
+
+Wine[56] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=0)
+
+Wine[57] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=4)
+
+Wine[58] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=7)
+
+Wine[59] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=9)
+
+Wine[60] = Wine(name=Eco Brilliant Wine, price=97, expiresInYears=-1)
+
+Wine[61] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=0)
+
+Wine[62] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=4)
+
+Wine[63] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=7)
+
+Wine[64] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=9)
+
+Wine[65] = Wine(name=Eco Brilliant Wine, price=148, expiresInYears=-1)
+
+Wine[66] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=0)
+
+Wine[67] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=4)
+
+Wine[68] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=7)
+
+Wine[69] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=9)
+
+Wine[70] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=-1)
+
+Wine[71] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=0)
+
+Wine[72] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=4)
+
+Wine[73] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=7)
+
+Wine[74] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=9)
+
+Wine[75] = Wine(name=Bourdeaux Conservato, price=2, expiresInYears=-1)
+
+Wine[76] = Wine(name=Bourdeaux Conservato, price=1, expiresInYears=0)
+
+Wine[77] = Wine(name=Bourdeaux Conservato, price=1, expiresInYears=4)
+
+Wine[78] = Wine(name=Bourdeaux Conservato, price=1, expiresInYears=7)
+
+Wine[79] = Wine(name=Bourdeaux Conservato, price=1, expiresInYears=9)
+
+Wine[80] = Wine(name=Bourdeaux Conservato, price=22, expiresInYears=-1)
+
+Wine[81] = Wine(name=Bourdeaux Conservato, price=21, expiresInYears=0)
+
+Wine[82] = Wine(name=Bourdeaux Conservato, price=21, expiresInYears=4)
+
+Wine[83] = Wine(name=Bourdeaux Conservato, price=21, expiresInYears=7)
+
+Wine[84] = Wine(name=Bourdeaux Conservato, price=21, expiresInYears=9)
+
+Wine[85] = Wine(name=Bourdeaux Conservato, price=100, expiresInYears=-1)
+
+Wine[86] = Wine(name=Bourdeaux Conservato, price=100, expiresInYears=0)
+
+Wine[87] = Wine(name=Bourdeaux Conservato, price=100, expiresInYears=4)
+
+Wine[88] = Wine(name=Bourdeaux Conservato, price=100, expiresInYears=7)
+
+Wine[89] = Wine(name=Bourdeaux Conservato, price=100, expiresInYears=9)
+
+Wine[90] = Wine(name=Bourdeaux Conservato, price=150, expiresInYears=-1)
+
+Wine[91] = Wine(name=Bourdeaux Conservato, price=150, expiresInYears=0)
+
+Wine[92] = Wine(name=Bourdeaux Conservato, price=150, expiresInYears=4)
+
+Wine[93] = Wine(name=Bourdeaux Conservato, price=150, expiresInYears=7)
+
+Wine[94] = Wine(name=Bourdeaux Conservato, price=150, expiresInYears=9)
+
+Wine[95] = Wine(name=Bourdeaux Conservato, price=1, expiresInYears=-1)
+
+Wine[96] = Wine(name=Bourdeaux Conservato, price=0, expiresInYears=0)
+
+Wine[97] = Wine(name=Bourdeaux Conservato, price=0, expiresInYears=4)
+
+Wine[98] = Wine(name=Bourdeaux Conservato, price=0, expiresInYears=7)
+
+Wine[99] = Wine(name=Bourdeaux Conservato, price=0, expiresInYears=9)
+
+Wine[100] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=0)
+
+Wine[101] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=1)
+
+Wine[102] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=5)
+
+Wine[103] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=8)
+
+Wine[104] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=10)
+
+Wine[105] = Wine(name=Wine brewed by Alexander the Great, price=20, expiresInYears=0)
+
+Wine[106] = Wine(name=Wine brewed by Alexander the Great, price=20, expiresInYears=1)
+
+Wine[107] = Wine(name=Wine brewed by Alexander the Great, price=20, expiresInYears=5)
+
+Wine[108] = Wine(name=Wine brewed by Alexander the Great, price=20, expiresInYears=8)
+
+Wine[109] = Wine(name=Wine brewed by Alexander the Great, price=20, expiresInYears=10)
+
+Wine[110] = Wine(name=Wine brewed by Alexander the Great, price=99, expiresInYears=0)
+
+Wine[111] = Wine(name=Wine brewed by Alexander the Great, price=99, expiresInYears=1)
+
+Wine[112] = Wine(name=Wine brewed by Alexander the Great, price=99, expiresInYears=5)
+
+Wine[113] = Wine(name=Wine brewed by Alexander the Great, price=99, expiresInYears=8)
+
+Wine[114] = Wine(name=Wine brewed by Alexander the Great, price=99, expiresInYears=10)
+
+Wine[115] = Wine(name=Wine brewed by Alexander the Great, price=150, expiresInYears=0)
+
+Wine[116] = Wine(name=Wine brewed by Alexander the Great, price=150, expiresInYears=1)
+
+Wine[117] = Wine(name=Wine brewed by Alexander the Great, price=150, expiresInYears=5)
+
+Wine[118] = Wine(name=Wine brewed by Alexander the Great, price=150, expiresInYears=8)
+
+Wine[119] = Wine(name=Wine brewed by Alexander the Great, price=150, expiresInYears=10)
+
+Wine[120] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=0)
+
+Wine[121] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=1)
+
+Wine[122] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=5)
+
+Wine[123] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=8)
+
+Wine[124] = Wine(name=Wine brewed by Alexander the Great, price=0, expiresInYears=10)
+
+Wine[125] = Wine(name=Event Wine, price=0, expiresInYears=-1)
+
+Wine[126] = Wine(name=Event Wine, price=4, expiresInYears=0)
+
+Wine[127] = Wine(name=Event Wine, price=2, expiresInYears=4)
+
+Wine[128] = Wine(name=Event Wine, price=1, expiresInYears=7)
+
+Wine[129] = Wine(name=Event Wine, price=1, expiresInYears=9)
+
+Wine[130] = Wine(name=Event Wine, price=0, expiresInYears=-1)
+
+Wine[131] = Wine(name=Event Wine, price=24, expiresInYears=0)
+
+Wine[132] = Wine(name=Event Wine, price=22, expiresInYears=4)
+
+Wine[133] = Wine(name=Event Wine, price=21, expiresInYears=7)
+
+Wine[134] = Wine(name=Event Wine, price=21, expiresInYears=9)
+
+Wine[135] = Wine(name=Event Wine, price=0, expiresInYears=-1)
+
+Wine[136] = Wine(name=Event Wine, price=100, expiresInYears=0)
+
+Wine[137] = Wine(name=Event Wine, price=100, expiresInYears=4)
+
+Wine[138] = Wine(name=Event Wine, price=100, expiresInYears=7)
+
+Wine[139] = Wine(name=Event Wine, price=100, expiresInYears=9)
+
+Wine[140] = Wine(name=Event Wine, price=0, expiresInYears=-1)
+
+Wine[141] = Wine(name=Event Wine, price=150, expiresInYears=0)
+
+Wine[142] = Wine(name=Event Wine, price=150, expiresInYears=4)
+
+Wine[143] = Wine(name=Event Wine, price=150, expiresInYears=7)
+
+Wine[144] = Wine(name=Event Wine, price=150, expiresInYears=9)
+
+Wine[145] = Wine(name=Event Wine, price=0, expiresInYears=-1)
+
+Wine[146] = Wine(name=Event Wine, price=3, expiresInYears=0)
+
+Wine[147] = Wine(name=Event Wine, price=1, expiresInYears=4)
+
+Wine[148] = Wine(name=Event Wine, price=0, expiresInYears=7)
+
+Wine[149] = Wine(name=Event Wine, price=0, expiresInYears=9)
+
