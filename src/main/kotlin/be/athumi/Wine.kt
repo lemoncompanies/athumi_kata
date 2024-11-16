@@ -10,6 +10,25 @@ data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
 
     fun isLegendaryItem(): Boolean =
             name == "Wine brewed by Alexander the Great"
+
+    fun handleEventItemPrice() {
+        if (price < 100) {
+            if (expiresInYears < 8) price += 1
+            if (expiresInYears < 3) price += 2
+        }
+    }
+
+    fun handleExpiredItem() {
+        if (!isConservato()) {
+            if (!isEventItem() && price > 0 && !isLegendaryItem()) {
+                price -= 1
+            } else if (isEventItem()) {
+                price = 0
+            }
+        } else if (price < 100) {
+            price += 1
+        }
+    }
     fun update() {
         if (!isConservato() && !isEventItem()) {
             if (price > 0 && !isLegendaryItem()) {
@@ -19,13 +38,7 @@ data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
             if (price < 100) {
                 price += 1
                 if (isEventItem()) {
-                    if (expiresInYears < 8 && price < 100) {
-                        price = price + 1
-                    }
-
-                    if (expiresInYears < 3 && price < 100) {
-                        price = price + 2
-                    }
+                    handleEventItemPrice()
                 }
             }
         }
@@ -35,20 +48,9 @@ data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
         }
 
         if (expiresInYears < 0) {
-            if (!isConservato()) {
-                if (!isEventItem() && price > 0 && !isLegendaryItem()) {
-                    price -= 1
-                } else if (isEventItem()) {
-                    price = 0
-                }
-            } else if (price < 100) {
-                price += 1
-            }
+            handleExpiredItem()
         }
 
-        if (price < 0) {
-            price = 0
-        }
+        price = price.coerceAtLeast(0)
     }
-
 }
