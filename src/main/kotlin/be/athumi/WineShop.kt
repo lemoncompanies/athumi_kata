@@ -1,54 +1,56 @@
 package be.athumi
 
-class WineShop(var items: List<Wine>) {
+class WineShop(var wines: List<Wine>) {
     fun next() {
         // Wine Shop logic
-        items.forEach { item ->
-            if (item.name != "Bourdeaux Conservato" && item.name != "Bourgogne Conservato" && !item.name.startsWith("Event")) {
-                if (item.price > 0 && item.name != "Wine brewed by Alexander the Great") {
-                    item.price = item.price - 1
+        wines.forEach { wine ->
+            if (!isConservato(wine) && !isEventItem(wine)) {
+                if (wine.price > 0 && !isLegendaryItem(wine)) {
+                    wine.price -= 1
                 }
             } else {
-                if (item.price < 100) {
-                    item.price = item.price + 1
-
-                    if (item.name.startsWith("Event")) {
-                        if (item.expiresInYears < 8 && item.price < 100) {
-                            item.price = item.price + 1
+                if (wine.price < 100) {
+                    wine.price += 1
+                    if (isEventItem(wine)) {
+                        if (wine.expiresInYears < 8 && wine.price < 100) {
+                            wine.price = wine.price + 1
                         }
 
-                        if (item.expiresInYears < 3 && item.price < 100) {
-                            item.price = item.price + 2
+                        if (wine.expiresInYears < 3 && wine.price < 100) {
+                            wine.price = wine.price + 2
                         }
                     }
                 }
             }
 
-            if (item.name != "Wine brewed by Alexander the Great") {
-                item.expiresInYears = item.expiresInYears - 1
-            } else if (item.price < 0) {
-                item.price = 0
+            if (!isLegendaryItem(wine)) {
+                wine.expiresInYears -= 1
             }
 
-            if (item.expiresInYears < 0) {
-                if (!item.name.contains("Conservato")) {
-                    if (!item.name.contains("Event")) {
-                        if (item.price > 0 && item.name != "Wine brewed by Alexander the Great") {
-                            item.price = item.price - 1
-                        }
-                    } else {
-                        item.price = 0
+            if (wine.expiresInYears < 0) {
+                if (!isConservato(wine)) {
+                    if (!isEventItem(wine) && wine.price > 0 && !isLegendaryItem(wine)) {
+                        wine.price -= 1
+                    } else if (isEventItem(wine)) {
+                        wine.price = 0
                     }
-                } else {
-                    if (item.price < 100) {
-                        item.price = item.price + 1
-                    }
+                } else if (wine.price < 100) {
+                    wine.price += 1
                 }
             }
 
-            if (item.price < 0) {
-                item.price = 0
+            if (wine.price < 0) {
+                wine.price = 0
             }
         }
     }
+
+    fun isConservato(wine: Wine): Boolean =
+            wine.name == "Bourdeaux Conservato" || wine.name == "Bourgogne Conservato"
+
+    fun isEventItem(wine: Wine): Boolean =
+            wine.name.startsWith("Event")
+
+    fun isLegendaryItem(wine: Wine): Boolean =
+            wine.name == "Wine brewed by Alexander the Great"
 }
