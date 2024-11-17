@@ -5,8 +5,9 @@ data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
 
     private val MAX_PRICE = 100
     private val MIN_PRICE = 0
+    private val wineType: WineType = determineWineType()
 
-    fun getWineType(): WineType = when {
+    private fun determineWineType(): WineType = when {
         name.contains("Conservato") -> WineType.CONSERVATO
         name.startsWith("Event") -> WineType.EVENT
         name == "Wine brewed by Alexander the Great" -> WineType.LEGENDARY
@@ -39,7 +40,7 @@ data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
     }
 
     private fun handleExpiredItemPrice() {
-        when (getWineType()) {
+        when (wineType) {
             WineType.STANDARD, WineType.ECO_BREWED -> adjustPrice(-1)
             WineType.EVENT -> price = MIN_PRICE
             WineType.CONSERVATO -> handleConservatoPrice()
@@ -50,11 +51,11 @@ data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
     }
 
     private fun adjustExpiration() {
-        if (getWineType() != WineType.LEGENDARY) expiresInYears -= 1
+        if (wineType != WineType.LEGENDARY) expiresInYears -= 1
     }
 
     fun updatePriceAndExpiration() {
-        when (getWineType()) {
+        when (wineType) {
             WineType.STANDARD -> handleStandardWinePrice()
             WineType.CONSERVATO -> handleConservatoPrice()
             WineType.EVENT -> handleEventItemPrice()
