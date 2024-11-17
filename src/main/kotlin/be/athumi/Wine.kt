@@ -2,54 +2,76 @@ package be.athumi
 
 data class Wine(var name: String, var price: Int, var expiresInYears: Int) {
 
-    fun isConservato(): Boolean =
-            name == "Bourdeaux Conservato" || name == "Bourgogne Conservato"
 
-    fun isEventItem(): Boolean =
-            name.startsWith("Event")
+    private val MAX_PRICE = 100
+    private val MIN_PRICE = 0
 
-    fun isLegendaryItem(): Boolean =
-            name == "Wine brewed by Alexander the Great"
+    fun getWineType(): WineType = when {
+        name.contains("Conservato") -> WineType.CONSERVATO
+        name.startsWith("Event") -> WineType.EVENT
+        name == "Wine brewed by Alexander the Great" -> WineType.LEGENDARY
+        name.startsWith("Eco") -> WineType.ECO_BREWED
+        else -> WineType.STANDARD
+    }
 
-    fun isEcoBrewed() : Boolean =
-            name == "Eco Brilliant Wine"
+    private fun adjustPrice(amount: Int) {
+        price += amount
+    }
 
-    fun handleEventItemPrice() {
-        if (price < 100) {
-            if (expiresInYears < 8) price += 1
-            if (expiresInYears < 3) price += 2
+    private fun handleStandardWinePrice() {
+        adjustPrice(-1)
+    }
+
+    private fun handleEcoBrewed() {
+        adjustPrice(-2)
+    }
+
+    private fun handleConservatoPrice() {
+        if (price < MAX_PRICE) adjustPrice(1)
+    }
+
+    private fun handleEventItemPrice() {
+        if (price < MAX_PRICE) adjustPrice(1)
+        if (price < MAX_PRICE) {
+            if (expiresInYears < 8) adjustPrice(1)
+            if (expiresInYears < 3) adjustPrice(2)
         }
     }
 
-    fun handleExpiredItem() {
-        if (!isConservato()) {
-            if (!isEventItem() && price > 0 && !isLegendaryItem()) {
-                price -= 1
-            } else if (isEventItem()) {
-                price = 0
+    private fun handleExpiredItemPrice() {
+        when (getWineType()) {
+            WineType.STANDARD, WineType.ECO_BREWED -> adjustPrice(-1)
+            WineType.EVENT -> price = MIN_PRICE
+            WineType.CONSERVATO -> handleConservatoPrice()
+            else -> {
+            // No action needed for other types
             }
-        } else if (price < 100) {
-            price += 1
         }
     }
 
-    fun update() {
-        when {
-            !isConservato() && !isEventItem() -> {
-                if (!isLegendaryItem() && price > 0) {
-                    price -= if (isEcoBrewed()) 2 else 1
-                }
-            }
-            price < 100 -> {
-                price += 1
-                if (isEventItem()) handleEventItemPrice()
+    private fun adjustExpiration() {
+        if (getWineType() != WineType.LEGENDARY) expiresInYears -= 1
+    }
+
+    fun updatePriceAndExpiration() {
+        when (getWineType()) {
+            WineType.STANDARD -> handleStandardWinePrice()
+            WineType.CONSERVATO -> handleConservatoPrice()
+            WineType.EVENT -> handleEventItemPrice()
+            WineType.ECO_BREWED -> handleEcoBrewed()
+            else -> {
+                // No action for Legendary
             }
         }
 
-        if (!isLegendaryItem()) expiresInYears -= 1
+        adjustExpiration()
 
-        if (expiresInYears < 0) handleExpiredItem()
+        if (expiresInYears < 0) handleExpiredItemPrice()
 
-        price = price.coerceAtLeast(0)
+        price = price.coerceAtLeast(MIN_PRICE)
     }
+}
+
+enum class WineType {
+    CONSERVATO, EVENT, LEGENDARY, STANDARD, ECO_BREWED
 }
