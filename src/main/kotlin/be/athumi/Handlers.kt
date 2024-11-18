@@ -1,25 +1,21 @@
 package be.athumi
 
 object ConservatoPriceHandler : WinePriceHandler {
-    private const val MAX_PRICE = 100
 
     override fun updatePrice(wine: Wine) {
-        if (wine.price < MAX_PRICE) adjustPrice(wine, 1)
+        adjustPrice(wine, 1)
     }
 
     override fun updatePriceBecauseExpired(wine: Wine) {
-        if (wine.price < MAX_PRICE) adjustPrice(wine, 1)
+        adjustPrice(wine, 1)
     }
 }
 
 object EventPriceHandler : WinePriceHandler {
-    private const val MAX_PRICE = 100
     override fun updatePrice(wine: Wine) {
-        if (wine.price < MAX_PRICE) adjustPrice(wine,1)
-        if (wine.price < MAX_PRICE) {
-            if (wine.expiresInYears < 8) adjustPrice(wine,1)
-            if (wine.expiresInYears < 3) adjustPrice(wine, 2)
-        }
+        adjustPrice(wine,1)
+        if (wine.expiresInYears < 8) adjustPrice(wine,1)
+        if (wine.expiresInYears < 3) adjustPrice(wine, 2)
     }
 
     override fun updatePriceBecauseExpired(wine: Wine) {

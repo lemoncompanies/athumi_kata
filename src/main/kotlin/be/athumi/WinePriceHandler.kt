@@ -6,6 +6,8 @@ interface WinePriceHandler {
 
     //price manipulation
     fun adjustPrice(wine: Wine, amount: Int) {
-        wine.price = (wine.price + amount).coerceAtLeast(0)
+        if (wine.price < 100 || amount < 0) {
+            wine.price = (wine.price + amount).coerceAtLeast(0)
+        }
     }
 }
