@@ -14,5 +14,5 @@ Wine[6] = Wine(name=Event Wine, price=52, expiresInYears=7)
 
 Wine[7] = Wine(name=Event Wine, price=55, expiresInYears=2)
 
-Wine[8] = Wine(name=Eco Brilliant Wine, price=3, expiresInYears=0)
+Wine[8] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=0)
 

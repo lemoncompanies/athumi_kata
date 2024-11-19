@@ -108,35 +108,35 @@ Wine[53] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=7)
 
 Wine[54] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=9)
 
-Wine[55] = Wine(name=Eco Brilliant Wine, price=18, expiresInYears=-1)
+Wine[55] = Wine(name=Eco Brilliant Wine, price=17, expiresInYears=-1)
 
-Wine[56] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=0)
+Wine[56] = Wine(name=Eco Brilliant Wine, price=18, expiresInYears=0)
 
-Wine[57] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=4)
+Wine[57] = Wine(name=Eco Brilliant Wine, price=18, expiresInYears=4)
 
-Wine[58] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=7)
+Wine[58] = Wine(name=Eco Brilliant Wine, price=18, expiresInYears=7)
 
-Wine[59] = Wine(name=Eco Brilliant Wine, price=19, expiresInYears=9)
+Wine[59] = Wine(name=Eco Brilliant Wine, price=18, expiresInYears=9)
 
-Wine[60] = Wine(name=Eco Brilliant Wine, price=97, expiresInYears=-1)
+Wine[60] = Wine(name=Eco Brilliant Wine, price=96, expiresInYears=-1)
 
-Wine[61] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=0)
+Wine[61] = Wine(name=Eco Brilliant Wine, price=97, expiresInYears=0)
 
-Wine[62] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=4)
+Wine[62] = Wine(name=Eco Brilliant Wine, price=97, expiresInYears=4)
 
-Wine[63] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=7)
+Wine[63] = Wine(name=Eco Brilliant Wine, price=97, expiresInYears=7)
 
-Wine[64] = Wine(name=Eco Brilliant Wine, price=98, expiresInYears=9)
+Wine[64] = Wine(name=Eco Brilliant Wine, price=97, expiresInYears=9)
 
-Wine[65] = Wine(name=Eco Brilliant Wine, price=148, expiresInYears=-1)
+Wine[65] = Wine(name=Eco Brilliant Wine, price=147, expiresInYears=-1)
 
-Wine[66] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=0)
+Wine[66] = Wine(name=Eco Brilliant Wine, price=148, expiresInYears=0)
 
-Wine[67] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=4)
+Wine[67] = Wine(name=Eco Brilliant Wine, price=148, expiresInYears=4)
 
-Wine[68] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=7)
+Wine[68] = Wine(name=Eco Brilliant Wine, price=148, expiresInYears=7)
 
-Wine[69] = Wine(name=Eco Brilliant Wine, price=149, expiresInYears=9)
+Wine[69] = Wine(name=Eco Brilliant Wine, price=148, expiresInYears=9)
 
 Wine[70] = Wine(name=Eco Brilliant Wine, price=0, expiresInYears=-1)
 
